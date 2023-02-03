@@ -116,7 +116,7 @@ class Body extends Component {
 				</Route>
 
 				</Header>
-			<MainBody className="px-4 py-4 md:px-28 md:py-8 lg:py-12">
+			<MainBody className="px-4 py-4 md:px-38 md:py-12 lg:py-12">
 
 				<Switch>
 					<Route exact path="/my-profile/pricing">
@@ -185,9 +185,9 @@ class Body extends Component {
 
 								<ToolForm
 									Icon={CheckIcon}
-									title={"Reactivate Subscription"} 
+									title={"Réactiver l'abonnement"} 
 									api={this.props.store.api}
-									desc={"Immediately cancelation of subscription and payments."} 
+									desc={"Réactivation d'un abonnement."} 
 									to={this.props.store.baseURL + "user/stripe/uncancel"}
 									fromColor={this.props.store.profile.cancel_at_period_end ? "green-400" : "green-500"} 
 									toColor={this.props.store.profile.cancel_at_period_end ? "green-400" : "green-500"} 

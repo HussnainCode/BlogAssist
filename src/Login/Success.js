@@ -36,7 +36,10 @@ class Login extends Component {
 			<div className="container mx-auto lg:px-4 py-4 min-h-screen flex flex-col md:items-center md:justify-center">
 
 				<div className="text-center mb-6">
-					<Logo />
+					{/* <Logo /> */}
+					<div style={{display: "flex", justifyContent: "center", alignItems: "center"}}>
+						<img src="logo_blogassist.png" alt="logo" style={{borderRadius: "50%", objectFit: "cover", maxWidth: "200px", maxHeight: "80px"}} />
+					</div>
 					<div>
 						<div className="text-4xl font-bold text-gray-700">Blog<span className="text-green-600 font-medium">Assist</span></div>
 					</div>

@@ -44,7 +44,7 @@ class Pricing extends Component {
 
 		{this.props.store.profile.status ? null : <>
 			<div style={{display: "flex", justifyContent: "center", alignItems: "center"}}>
-				<img src="logo_blog.png" alt="logo" style={{borderRadius: "50%", objectFit: "cover", maxWidth: "200px", maxHeight: "80px"}} />
+				<img src="logo_blogassist.png" alt="logo" style={{borderRadius: "50%", objectFit: "cover", maxWidth: "200px", maxHeight: "80px"}} />
 			</div>
 
 			<h2 className="text-xl sm:text-2xl md:text-5xl text-gray-700 text-center">
@@ -76,7 +76,7 @@ const Free = ({ fromColor, toColor, baseURL, api }) => <div className="flex rela
 
 <div className="p-8 flex-1">
 <div href="#" className={`text-${fromColor ? fromColor : "green-500"} block text-lg text-2xl leading-tight font-medium mb-2`}>Gratuit</div>
-<div className="text-6xl text-black font-bold">0€</div>
+<div className="text-4xl text-black font-bold">0€</div>
 <p className="mt-4 text-lg">
 	Essayez avant de payer
 </p>
@@ -119,7 +119,7 @@ const Entry = ({ fromColor, toColor, baseURL, api }) => <div className="flex rel
 
 <div className="p-8 flex-1">
   <div href="#" className={`text-${fromColor ? fromColor : "green-500"} block text-lg text-2xl leading-tight font-medium mb-2`}>Entry</div>
-  <div className="text-6xl text-black font-bold">11,90€<span className="text-lg text-gray-400">/mois</span></div>
+  <div className="text-4xl text-black font-bold">11,90€<span className="text-lg text-gray-400">/mois</span></div>
   <p className="mt-4 text-lg">
 	  Besoin d'un petit coup de pouce de temps en temps ? Cette offre est faite pour vous
   </p>
@@ -157,7 +157,7 @@ const Plus = ({ fromColor, toColor, baseURL, api }) => <div className="flex rela
 
 <div className="p-8 flex-1">
   <div href="#" className={`text-${fromColor ? fromColor : "green-500"} block text-lg text-2xl leading-tight font-medium mb-2`}>Plus</div>
-  <div className="text-6xl text-black font-bold">24,90€<span className="text-lg text-gray-400">/mois</span></div>
+  <div className="text-4xl text-black font-bold">24,90€<span className="text-lg text-gray-400">/mois</span></div>
   <p className="mt-4 text-lg">
 	  Intégrez Blog Assist à vos outils de travail
   </p>
@@ -200,7 +200,7 @@ const Premium = ({ fromColor, toColor, baseURL, api }) => <div className="flex r
 
 <div className="p-8 flex-1">
   <div href="#" className={`text-${fromColor ? fromColor : "green-500"} block text-lg text-2xl leading-tight font-medium mb-2`}>Pro</div>
-  <div className="text-6xl text-black font-bold">89,90€<span className="text-lg text-gray-400">/mois</span></div>
+  <div className="text-4xl text-black font-bold">89,90€<span className="text-lg text-gray-400">/mois</span></div>
   <p className="mt-4 text-lg">
 	  Utilisez Blog Assist sans vous soucier des limites de crédits
   </p>
@@ -236,7 +236,7 @@ const Premium = ({ fromColor, toColor, baseURL, api }) => <div className="flex r
 </div>
 
 
-const Grid = ({ children }) => <div className="grid grid-cols-1 gap-12 mt-4 xl:grid-cols-3 ">{children}</div>
+const Grid = ({ children }) => <div style={{ justifyContent: "center", maxWidth: "120%"}} className="grid grid-cols-1 gap-12 mt-4 xl:grid-cols-4 ">{children}</div>
 
 
 export default Pricing

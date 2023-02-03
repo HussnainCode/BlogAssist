@@ -84,11 +84,11 @@ class SidebarCompontent extends Component {
 										<Body className="px-4 py-4 md:px-28 md:py-8 lg:py-12 flex items-center flex-1">
 											<div className="mr-4">
 											{/* <NavLink to="/"><Logo /></NavLink> */}
-											<NavLink to="/"><img src={'logo_blog.png'} alt='logo' style={{maxWidth: "200px", maxHeight: "80px"}}/></NavLink>
+											<NavLink to="/"><img src={'logo_blogassist.png'} alt='logo' style={{maxWidth: "200px", maxHeight: "80px"}}/></NavLink>
 											</div>
 												<div>
 													<div className="text-4xl relative font-medium text-transparent bg-clip-text bg-gradient-to-r from-gray-700 to-gray-600 inline-block">Blog<span className="font-normal "> Assist</span> 
-														<div className="absolute top-0 ml-3 left-full bg-gradient-to-br from-gray-500 to-gray-500 text-white text-sm px-2 py-0.5 rounded-md font-normal hidden md:flex">gpt3</div>
+														{/* <div className="absolute top-0 ml-3 left-full bg-gradient-to-br from-gray-500 to-gray-500 text-white text-sm px-2 py-0.5 rounded-md font-normal hidden md:flex">gpt3</div> */}
 													</div>
 													<div className="hidden md:block text-xl text-transparent bg-clip-text bg-gradient-to-r from-blue-700 to-blue-500 inline-block">Votre compagnon de rédaction</div>
 													<div className="flex">
@@ -122,7 +122,7 @@ class SidebarCompontent extends Component {
 																tabIndex={-1}
 																id="q"
 																name="q" 
-																className="py-4 pl-4 md:pl-14 text-xl focus:outline-none focus:bg-white focus:text-gray-900 transition flex flex-1 w-full" placeholder="Rechercher...  [Raccourci: Ctrl + K]" autoComplete="off" 
+																className="py-4 pl-4 md:pl-14 text-xl focus:outline-none focus:bg-white focus:text-gray-900 transition flex flex-1 w-full" placeholder="Rechercher..." autoComplete="off" 
 																value={this.props.store.toolsKeyword} 
 																onChange={this.props.store.onChangeToolsKeyword} 
 																onKeyUp={this.onKeyUp}
@@ -179,7 +179,6 @@ const SuperHeader = styled.div`
 	background:white;
 	margin-top:${props => props.active ? "0px" : "-150px" };
 	display:${props => props.hidden ? "hidden" : "flex" };
-	background-image:url(${require('./pattern-dots.svg').default});
 	background-size:auto 50%;
 	background-position: 20px 20px;
 	background-repeat:no-repeat;

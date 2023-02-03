@@ -96,9 +96,12 @@ class Login extends Component {
 			</Helmet>
 			<div className="container mx-auto lg:px-4 py-4 min-h-screen flex flex-col md:items-center md:justify-center">
 
-				<div className="text-center mb-6">
-					<Logo />
-					<div className="text-3xl md:text-5xl relative font-medium text-transparent bg-clip-text bg-gradient-to-r from-gray-700 to-gray-600 mb-4">Blog<span className="font-normal "> Assist</span>
+				<div className="text-center mb-4">
+					{/* <Logo /> */}
+					<div style={{display: "flex", justifyContent: "center", alignItems: "center"}}>
+						<img src="logo_blogassist.png" alt="logo" style={{borderRadius: "50%", objectFit: "cover", maxWidth: "200px", maxHeight: "80px"}} />
+					</div>
+					<div className="text-3xl md:text-4xl relative font-medium text-transparent bg-clip-text bg-gradient-to-r from-gray-700 to-gray-600 mb-4 ">Blog<span className="font-normal ">Assist</span>
 						{/* <div className="absolute top-0 ml-3 left-full bg-gradient-to-r from-gray-500 to-gray-500 text-white text-sm px-2 py-0.5 hidden md:inline-block rounded-md font-normal ">gpt3</div> */}
 					</div>
 				</div>
