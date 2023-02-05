@@ -150,7 +150,7 @@ class Login extends Component {
 				{this.errorMessage}
 				</div> : null}
 				</div>
-				<a href={`https://ai-site-9b1874.webflow.io/`} className="block text-center bg-gray-100 text-gray-500 text-sm p-3 rounded-b-lg hover:bg-gray-200 cursor-pointer">
+				<a href={`https://blogassist.fr/`} className="block text-center bg-gray-100 text-gray-500 text-sm p-3 rounded-b-lg hover:bg-gray-200 cursor-pointer">
 					Retour à l'accueil
 				</a>
 			</div>
