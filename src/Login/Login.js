@@ -189,7 +189,7 @@ class Login extends Component {
 						signUp Google
 						</div>
 						 */}
-						<a href={`https://ai-site-9b1874.webflow.io/contact-us`} className="mt-4 text-gray-400 text-sm">Vous avez oublié votre mot de passe?</a>
+						<a href={`https://blogassist.fr/contact-us`} className="mt-4 text-gray-400 text-sm">Vous avez oublié votre mot de passe?</a>
 					</div>
                     </div>
                   </form>
