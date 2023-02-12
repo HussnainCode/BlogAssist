@@ -5,7 +5,7 @@ import {
 
 const obj = {
 
-	title: "Corrigez votre texte",
+	title: "Correction de texte",
 	desc: "Corrigez votre texte de toute erreur syntaxique.",
 	category: "Syntaxe",
 	Icon: ViewListIcon,

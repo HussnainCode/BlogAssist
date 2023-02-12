@@ -5,7 +5,7 @@ import {
 
 const obj = {
 
-	title: "Ecrire un titre",
+	title: "Titre",
 	desc: "Donnez un titre à votre article",
 	category: "Rédaction",
 	Icon: ViewListIcon,

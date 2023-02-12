@@ -26,7 +26,8 @@ app.post('/writing/outline', async (req, res, next) => {
 		`Titre: SEO on-page : l'essentiel pour optimiser votre site web\n` + 
 		`${audience ? `Audience: Marketing, créateurs de site web\n` : ``}` + 
 		`${desc ? `Description: Un article sur l'utilité du SEO pour le référencement de son site web et une croissance organique.\n` : ``}` + 
-		`Plan: - Quels sont les idées reçues sur le SEO ?
+		`Plan: 
+		- Quels sont les idées reçues sur le SEO ?
 		- Faire un audit SEO.
 		- Utiliser les balises Title.
 		- Employer les balises Hn.
@@ -40,7 +41,8 @@ app.post('/writing/outline', async (req, res, next) => {
 		`Titre: Comment faire le marketing de soi\n` + 
 		`${audience ? `Audience: Marketing\n` : ``}` + 
 		`${desc ? `Description: Un article sur les différentes manières de maîtriser son image en ligne en passant par un diagnostic et des solutions.\n` : ``}` + 
-		`Plan: - Qu'est ce que le marketing de soi ?
+		`Plan: 
+		- Qu'est ce que le marketing de soi ?
 		- Le marketing de soi à l'ère des réseaux sociaux.
 		- L'importance du marketing de soi.
 		- Poser un auto diagnostic.
@@ -55,7 +57,8 @@ app.post('/writing/outline', async (req, res, next) => {
 		`Titre: L'importance de l'intelligence artificielle dans le monde de demain\n` + 
 		`${audience ? `Audience: Gens intéressés par les nouvelles technologies\n` : ``}` + 
 		`${desc ? `Description: Un article sur le rôle de l'intelligence artificielle dans le monde de demain, de sa future utilisation, de son impact sur la société et de ses intérêts.\n` : ``}` + 
-		`Plan: - Qu'est-ce que l'intelligence artificielle et à quoi sert-elle ?
+		`Plan: 
+		- Qu'est-ce que l'intelligence artificielle et à quoi sert-elle ?
 		- Comment l'IA peut-elle révolutionner le monde de demain ?
 		- Quels sont les avantages et inconvénients de l'IA ?
 		- Comment l'IA peut-elle aider à résoudre des problèmes sociaux ?
@@ -69,7 +72,8 @@ app.post('/writing/outline', async (req, res, next) => {
 		let inputRaw = `Titre: ${title}\n` + 
 		`${audience ? `Audience: ${audience}\n` : ``}` + 
 		`${desc ? `Description: ${desc}\n` : ``}` + 
-		`Plan:` 
+		`Plan:
+		- ` 
 
 
 		prompt += inputRaw

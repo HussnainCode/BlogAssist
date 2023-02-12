@@ -90,17 +90,17 @@ export const QuickTools = inject('store')(observer(({ store, output, outputs, co
 			onClick={()=>store.copyToClipboard(output || code || outputs)}
 			>
 				<DuplicateIcon className="w-5 h-5" />
-				<Tooltip className="absolute bottom-2 flex flex-col items-center mb-6 group-hover:flex">
-					<span className="relative z-10 p-3 text-sm leading-none text-gray-800 bg-white bg-opacity-25 shadow-lg text-center backdrop-filter backdrop-blur rounded-md">Copy text to clipboard</span>
+				<Tooltip className="absolute top-2 flex flex-col items-center mb-6 group-hover:flex">
+					<span className="relative z-10 p-3 text-sm leading-none text-gray-800 bg-white bg-opacity-25 shadow-lg text-center backdrop-filter backdrop-blur rounded-md">Copier dans le presse-papier</span>
 				</Tooltip>
 			</Shortcut>
 			<div className="flex-1"></div>
-			<Shortcut className="p-1 rounded-lg cursor-pointer hover:bg-red-200 hover:text-red-700 relative group flex flex-col items-center group text-gray-300" onClick={()=>store.reportToFeedback(output || code || outputs)}>
+			{/* <Shortcut className="p-1 rounded-lg cursor-pointer hover:bg-red-200 hover:text-red-700 relative group flex flex-col items-center group text-gray-300" onClick={()=>store.reportToFeedback(output || code || outputs)}>
 				<ExclamationCircleIcon className="w-5 h-5" />
 				<Tooltip className="absolute bottom-2 flex flex-col items-center mb-6 group-hover:flex">
 					<span className="relative z-10 p-3 text-sm leading-none text-gray-800 bg-white bg-opacity-25 shadow-lg text-center backdrop-filter backdrop-blur rounded-md">Report issue with output</span>
 				</Tooltip>
-			</Shortcut>
+			</Shortcut> */}
 		</div> : null}
 		</>
 	)

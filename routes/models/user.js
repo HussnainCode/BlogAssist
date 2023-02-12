@@ -22,7 +22,7 @@ const UserSchema = new Schema({
 	customerId: { type: String, default: "" }, // stripe id
 	credits: { 
 		type: Number, 
-		default: 500,
+		default: 1000,
 		integer: true,
 		get: v => Math.round(v),
 		set: v => Math.round(v),
@@ -34,8 +34,8 @@ const UserSchema = new Schema({
 		get: v => Math.round(v),
 		set: v => Math.round(v),
 	},
-	plan: { type: String, default: "" }, // entry, pro
-	status: { type: String, default: "" }, // trialing, active, inactive
+	plan: { type: String, default: "free" }, // entry, pro
+	status: { type: String, default: "active" }, // trialing, active, inactive
 	trial_end: { type: Date, 
 		default: ((Date.now() / 1000)  + (7 * 24 * 60 * 60)), 
 		set: d => new Date(d * 1000 ) },

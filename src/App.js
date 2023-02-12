@@ -15,7 +15,6 @@ import {
 
 import Header from './Header'
 import Search from './Search'
-import Pricing from './Pricing' // <--- Add this line
 
 import Dashboard from './Dashboard'
 
@@ -70,13 +69,8 @@ class App extends Component {
                       <Route path="/signup/success" component={LoginSuccess} />
                     
                   </Switch>
-                  </> : <> {/* Logged in but no plan */}
-               <Switch>
-                  <Route path="/signup/success" component={LoginSuccess} />
-                  <Route>
-                    <Pricing />
-                  </Route>
-                  </Switch>
+                </> : <> {/* Logged in but no plan */}
+               
                 </>} </> : <> {/*  Not Logged In */}
                 <Switch>
                   <Route path="/" exact>

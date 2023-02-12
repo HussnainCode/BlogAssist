@@ -12,7 +12,6 @@ import {Helmet} from "react-helmet";
 import EnvIcon from './EnvIcon'
 import { withRouter } from 'react-router-dom'
 import { observer, inject } from 'mobx-react'
-import Pricing from '../Pricing'
 
 @inject('store')
 @observer
@@ -119,9 +118,7 @@ class Body extends Component {
 			<MainBody className="px-4 py-4 md:px-38 md:py-12 lg:py-12">
 
 				<Switch>
-					<Route exact path="/my-profile/pricing">
-						<Pricing />
-					</Route>
+					
 					<Route exact path="/my-profile/referral">
 						<Referral />
 					</Route>
@@ -133,76 +130,6 @@ class Body extends Component {
 						
 							
 						<Grid>
-
-						{this.plan.status === "trialing" ? 
-									<ToolForm
-									Icon={CheckIcon}
-									title={`Active Subscription`} 
-									desc={`${this.plan.plan === "Entry" ? "$30" : ""}${this.plan.plan === "Pro" ? "$90" : ""} billing  immediately. Ends trial and starts billing plan.`} 
-									to={this.props.store.baseURL + "/user/stripe/activate"}
-									api={this.props.store.api}
-									fromColor="purple-500"
-									toColor="indigo-600"
-								/>: null}
-
-
-
-							{this.plan.plan === "None" ? <Tool
-								Icon={IdentificationIcon}
-								title={"Gérer mon offre"} 
-								api={this.props.store.api}
-								desc={"Modifiez ou annulez votre abonnement à tout moment."} 
-								to={"/my-profile/pricing"}
-								fromColor="red-400"
-						/> : null	}
-
-
-						{this.headerMessage === "Expired" ? null : <>
-							{this.ifNotActive ? null : <>
-
-								<ToolForm
-									Icon={IdentificationIcon}
-									title={"Annuler l'abonnement"} 
-									api={this.props.store.api}
-									desc={"Annulation de l'abonnement et des paiements"} 
-									to={this.props.store.baseURL + "user/stripe/cancel"}
-									fromColor={this.props.store.profile.cancel_at_period_end ? "red-600" : "red-500"} 
-									toColor={this.props.store.profile.cancel_at_period_end ? "red-400" : "red-600"} 
-								/>
-								
-								{/* <ToolForm
-									Icon={DatabaseIcon}
-									title={"Buy Credits"} 
-									desc={"250 x extra credits quick-buy"} 
-									to={this.props.store.baseURL + "user/stripe/buy250"}
-									api={this.props.store.api}
-									fromColor="purple-500"
-									toColor="indigo-600"
-								/> */}
-							</>}
-							
-							{this.props.store.profile.cancel_at_period_end ? <>
-
-								<ToolForm
-									Icon={CheckIcon}
-									title={"Réactiver l'abonnement"} 
-									api={this.props.store.api}
-									desc={"Réactivation d'un abonnement."} 
-									to={this.props.store.baseURL + "user/stripe/uncancel"}
-									fromColor={this.props.store.profile.cancel_at_period_end ? "green-400" : "green-500"} 
-									toColor={this.props.store.profile.cancel_at_period_end ? "green-400" : "green-500"} 
-								/>
-
-							</> : null}
-							<ToolForm
-								Icon={IdentificationIcon}
-								title={this.props.store.profile.cancel_at_period_end ? "Manage Subscription" : "Update Subscription"} 
-								api={this.props.store.api}
-								desc={"Change your plan, card details, or cancel the plan anytime."} 
-								to={this.props.store.baseURL + "user/stripe/customer-portal"}
-								fromColor={this.props.store.profile.cancel_at_period_end ? "blue-600" : "blue-500"} 
-								toColor={this.props.store.profile.cancel_at_period_end ? "blue-400" : "blue-600"} 
-							/></>}
 
 
 
