@@ -42,7 +42,7 @@ const obj = {
 				min: 5,
 				required: true,
 				error: "",
-				example: "L'intelligence artificielle dans le monde de demain.",
+				example: "Optimiser le contenu de ses blogs; une stratégie SEO efficace ?",
 			},
 			{ 
 				title: "Audience", 
@@ -56,7 +56,7 @@ const obj = {
 				// min: 5,
 				// required: true,
 				error: "",
-				example: "Etudiants, universitaires",
+				example: "Bloggers, rédacteurs d'articles en ligne",
 			},
 			{ 
 				title: "Description", 
@@ -70,7 +70,7 @@ const obj = {
 				// min: 100,
 				// required: true,
 				error: "",
-				example: "Un article sur les avancées technologiques de l'intelligence artificielle et de son futur rôle dans la société.",
+				example: "Un article sur l'importance et l'utilité de l'optimisation du contenu sur son blog afin de toucher une plus large audience et améliorer son référencement SEO.",
 			},
 			{ 
 				title: "Mots-clés", 
@@ -84,11 +84,12 @@ const obj = {
 				// min: 4,
 				// required: true,
 				error: "",
-				example: "Intelligence artificielle, technologie.",
+				example: "SEO, référencement, conseils",
 			},
 		],
 		example: {
-			output: "L’intelligence artificielle est l’une des technologies les plus prometteuses de notre ère et elle jouera un rôle important dans le monde de demain. De plus en plus d’entreprises et de gouvernements s’intéressent à l’IA et à ses possibilités infinies. Dans cet article, nous allons examiner l’intelligence artificielle et son rôle dans le monde de demain. Nous verrons comment l’IA peut nous aider à atteindre des objectifs plus ambitieux et à créer un monde plus sûr et plus prospère.",
+			output: `Si vous êtes ici, il est probable que vous souhaitiez améliorer votre référencement en ligne et maximiser la visibilité de votre blog. C'est une excellente décision, car dans l'univers numérique d'aujourd'hui, le SEO (Search Engine Optimization) joue un rôle clé pour attirer l'attention des moteurs de recherche. En optimisant le contenu de vos articles pour le SEO, vous pouvez améliorer votre référencement et atteindre une audience plus large, ce qui peut conduire à un engagement accru et une plus grande reconnaissance en ligne. Cependant, il peut être difficile de savoir comment optimiser correctement le contenu de vos articles pour le SEO. C'est pourquoi nous sommes là pour vous aider ! 
+			Dans cet article, nous allons explorer les techniques pour optimiser le contenu de vos blogs pour le SEO, en vous fournissant des conseils pratiques pour vous aider à atteindre vos objectifs. Nous aborderons des sujets tels que la recherche de mots-clés pertinents, la structure de votre contenu, la longueur des articles, etc. Alors, si vous êtes prêt à découvrir comment optimiser le contenu de vos blogs pour le SEO, restez avec nous !`,
 			// outputs: [],
 			// Icon: RefreshIcon,
 			// color: "",

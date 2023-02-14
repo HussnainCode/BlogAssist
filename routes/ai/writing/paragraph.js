@@ -20,7 +20,7 @@ app.post('/writing/paragraph', async (req, res, next) => {
 			}
 		}
 
-		let prompt = `Ecris un paragraphe d'article à partir des informations de titre, description et audience du paragraphe. Adopte un ton naturel qui donne envie de lire l'article. Définis les termes techniques que tu utilises et donne des exemples pour illustrer tes propos.
+		let prompt = `Ecris un paragraphe d'article à partir des informations de titre, description et audience du paragraphe. Adopte un ton naturel qui donne envie de lire l'article. Définis les termes techniques que tu utilises et donne des exemples pour illustrer tes propos. Le résultat doit être SEO-friendly pour optimiser le référencement de l'article par les moteurs de recherche.
 		:\n"""\n` +
 
 		// Example 1

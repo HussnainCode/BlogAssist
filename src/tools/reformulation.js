@@ -36,7 +36,7 @@ const obj = {
 				placeholder: "Texte...", 
 				label: "",
 				type: "textarea",
-				maxLength: 700,
+				maxLength: 1000,
 				// max: 100,
 				min: 3,
 				required: true,

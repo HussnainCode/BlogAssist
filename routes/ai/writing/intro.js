@@ -46,7 +46,7 @@ app.post('/writing/intro', async (req, res, next) => {
 		// `Introduction: Avec une croissance annoncée de 21% pour le marché mondial en 2022, l’intelligence artificielle est un secteur qui semble avoir de belles années devant soi. Les récentes innovations dans le domaine ont effectivement montré que le développement de l’intelligence artificielle n’est pas près de s’arrêter. Comment l’intelligence artificielle va-t-elle révolutionner les méthodes de travail dans les années à venir ? Et comment préparer une future carrière dans ce domaine si passionnant ?\n` + 
 		// `"""\n`
 
-		let prompt = ` Ecris une introduction d'article de blog ayant avec les informations de Titre, Audience, description et mots clés donnés. Adopte un ton naturel qui donne envie de lire la suite de l'article. Fais apparaître les mots clés donnés dans l'introduction.
+		let prompt = ` Ecris une introduction d'article de blog ayant avec les informations de Titre, Audience, description et mots clés donnés. Adopte un ton naturel qui donne envie de lire la suite de l'article. Fais apparaître les mots clés donnés dans l'introduction. Le résultat doit être SEO-friendly pour optimiser le référencement de l'article par les moteurs de recherche.
 		Titre : SEO on-page : l'essentiel pour optimiser votre site web
 		Audience : Marketing, créateurs de site web
 		Description : Un article sur l'utilité du SEO pour le référencement de son site web et une croissance organique du trafic vers sont site
@@ -60,6 +60,13 @@ app.post('/writing/intro', async (req, res, next) => {
 		Description : Un article sur la définition du coliving, ses origines et son application en pratique dans la vie des digital nomades.
 		Mots-clés : coliving, indépendants, partager
 		Introduction : Travailler, manger, dormir, vivre ensemble : certains freelances et indépendants ont décidé de vivre en communauté. Entre la colocation et le coworking, le coliving est un nouveau concept s’adressant essentiellement aux jeunes actifs et offrant un compromis entre le confort d’un chez soi et l’énergie créatrice que peut proposer un espace de co-working. Sujet émergent en France il y a quelques années, on en entend beaucoup parler du phénomène aujourd’hui. En quoi consiste le coliving au juste ? Focus sur le coliving.
+
+		Titre : Optimiser le contenu de ses blogs; une stratégie SEO efficace ?
+		Audience : Bloggers, rédacteurs d'articles en ligne
+		Description : Un article sur l'importance et l'utilité de l'optimisation du contenu sur son blog afin de toucher une plus large audience et améliorer son référencement SEO.
+		Mots-clés : SEO, référencement, conseils
+		Introduction : Si vous êtes ici, il est probable que vous souhaitiez améliorer votre référencement en ligne et maximiser la visibilité de votre blog. C'est une excellente décision, car dans l'univers numérique d'aujourd'hui, le SEO (Search Engine Optimization) joue un rôle clé pour attirer l'attention des moteurs de recherche. En optimisant le contenu de vos articles pour le SEO, vous pouvez améliorer votre référencement et atteindre une audience plus large, ce qui peut conduire à un engagement accru et une plus grande reconnaissance en ligne. Cependant, il peut être difficile de savoir comment optimiser correctement le contenu de vos articles pour le SEO. C'est pourquoi nous sommes là pour vous aider ! 
+		Dans cet article, nous allons explorer les techniques pour optimiser le contenu de vos blogs pour le SEO, en vous fournissant des conseils pratiques pour vous aider à atteindre vos objectifs. Nous aborderons des sujets tels que la recherche de mots-clés pertinents, la structure de votre contenu, la longueur des articles, etc. Alors, si vous êtes prêt à découvrir comment optimiser le contenu de vos blogs pour le SEO, restez avec nous !
 		
 		Titre : Se lancer en freelance en tant que développeur
 		Audience : développeurs, ingénieurs logiciel
@@ -81,7 +88,7 @@ app.post('/writing/intro', async (req, res, next) => {
 		const gptResponse = await openai.complete({
 			engine: 'text-davinci-003',
 			prompt,
-			maxTokens: 250,
+			maxTokens: 350,
 			temperature: 0.7,
 			frequencyPenalty: 0.2,
 			presencePenalty: 0,
