@@ -106,7 +106,7 @@ class Tool extends Component {
             if(prompt.min){
                 if(prompt.value.length < prompt.min){
                     shouldReturn = true
-                    prompt.error = `${prompt.title} needs to meet the minimum ${prompt.min} characters`;
+                    prompt.error = `${prompt.title} doit avoir une longueur minimum de ${prompt.min} caractères`;
                 }
             }
         })

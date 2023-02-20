@@ -20,7 +20,7 @@ app.post('/writing/outline', async (req, res, next) => {
 			}
 		}
 
-		let prompt = `Cet outil génère un plan d'article:\n"""\n` +
+		let prompt = `Tu es un expert de rédaction web SEO. Génère un plan d'article en listant les points à aborder par ordre logique:\n"""\n` +
 
 		// Example 1
 		`Titre: SEO on-page : l'essentiel pour optimiser votre site web\n` + 

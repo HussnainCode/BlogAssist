@@ -20,13 +20,19 @@ app.post('/writing/article_title', async (req, res, next) => {
 			}
 		}
 
-		let prompt = `Tu es un générateur de titres d'articles de blog. Génère 3 propositions créatives de titres à partir de la description donnée.
+		let prompt = `Tu es un générateur de titres d'articles de blog. Génère 3 propositions créatives de titres à partir de la description donnée. Les titres générés doivent être assez courts (70 caractères maximum), contenir un ou plusieurs mots-clés (le plus important au début) et explicites de manière à être facilement référencés par les moteurs de recherche.
 
 		Description : Un article sur les avantages et problématiques d'une mise en oeuvre de l'IA en terme de limitations techniques, économiques et sociétales
 		Titres : 
 		1. L'IA ouvre de nouvelles portes : les découvertes récentes
 		2. L'Intelligence Artificielle : De nouvelles possibilités à l'horizon
 		3. Explorons les frontières de l'IA : Des opportunités sans limites
+
+		Description : Un article avec des conseils d'application pratiques pour rédiger des articles de blog de qualité qui seront naturellement référencés par les moteurs de recherche.
+		Titres : 
+		1. Comment rédiger un article de blog : 24 conseils
+		2. 10 astuces pratiques pour rédiger des articles de blog SEO-friendly
+		3. Rédaction de blog : les erreurs à éviter pour un meilleur classement sur les moteurs de recherche
 		
 		Description : Un article sur les difficultés des retraités à trouver un emploi passé un certain âge
 		Titres :

@@ -22,7 +22,7 @@ const UserSchema = new Schema({
 	customerId: { type: String, default: "" }, // stripe id
 	credits: { 
 		type: Number, 
-		default: 1000,
+		default: 5000,
 		integer: true,
 		get: v => Math.round(v),
 		set: v => Math.round(v),

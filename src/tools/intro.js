@@ -86,6 +86,20 @@ const obj = {
 				error: "",
 				example: "SEO, référencement, conseils",
 			},
+			{ 
+				title: "Nombre de mots", 
+				attr: "words",  
+				value: "", 
+				placeholder: "100", 
+				label: "Longueur de l'introduction",
+				// type: "textarea",
+				maxLength: 3,
+				// max: 3,
+				// min: 2,
+				// required: true,
+				error: "",
+				example: "200",
+			},
 		],
 		example: {
 			output: `Si vous êtes ici, il est probable que vous souhaitiez améliorer votre référencement en ligne et maximiser la visibilité de votre blog. C'est une excellente décision, car dans l'univers numérique d'aujourd'hui, le SEO (Search Engine Optimization) joue un rôle clé pour attirer l'attention des moteurs de recherche. En optimisant le contenu de vos articles pour le SEO, vous pouvez améliorer votre référencement et atteindre une audience plus large, ce qui peut conduire à un engagement accru et une plus grande reconnaissance en ligne. Cependant, il peut être difficile de savoir comment optimiser correctement le contenu de vos articles pour le SEO. C'est pourquoi nous sommes là pour vous aider ! 
